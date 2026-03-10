@@ -1,0 +1,6 @@
+@LocatemApi_HostAddress = http://localhost:5058
+
+GET {{LocatemApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
