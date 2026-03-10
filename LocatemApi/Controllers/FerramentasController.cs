@@ -6,6 +6,8 @@ namespace LocatemApi.Controllers
     [Route("api/[controller]")]
     public class FerramentasController : ControllerBase
     {
+    // Miguel e Stephany
+    
         // GET api/ferramentas/GetAll
         [HttpGet("GetAll")]
         public IActionResult GetAllFerramentas()
