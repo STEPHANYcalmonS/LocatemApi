@@ -19,10 +19,14 @@ namespace LocatemApi.Model
 
         public DateTime DataCadastro { get; set; } 
         public bool Ativo { get; set; } // Define o cliente como ativo por padrão
+
+        public List<Endereco> Enderecos { get; set; } = [];
+
         public Cliente()
         {
             DataCadastro = DateTime.UtcNow; // Define a data de cadastro como a data atual no momento da criação do cliente
             Ativo = true; // Define o cliente como ativo por padrão
         }
+       
     }
 }
