@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using LocatemApi.Enum;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 namespace LocatemApi.Model
@@ -7,6 +8,8 @@ namespace LocatemApi.Model
     {
         [Key]
         public int Id { get; set; }
+        [Required]
+        public TipoEndereco TipoEndereco { get; set; }
 
         [Required(ErrorMessage = "Logradouro é um valor obrigatório")]
         public string Logradouro { get; set; } = string.Empty;
